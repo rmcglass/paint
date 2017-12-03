@@ -105,6 +105,8 @@ def GUIPaint():
     medButton.grid(row=10, column=0)
     bigButton = Button(f2, text='Big', command=bigPen)
     bigButton.grid(row=11, column=0)
+    jumboButton = Button(f2, text='Jumbo', command=jumboPen)
+    jumboButton.grid(row=12, column=0)
 
     mainWindow.mainloop()
 
@@ -234,26 +236,33 @@ def colorBlack():
 # pensize functions
 def smallPen():
     '''changes pensize to a 2x2 pixel circle
-     and newH (the image height for imageStamp) to 200 pixels'''
+     and newH (the image height for imageStamp) to 100 pixels'''
     global size
     global newH
     size = 1
-    newH = 200
+    newH = 100
 def medPen():
     '''changes pensize to a 10x10 pixel circle
-    and newH (the image height for imageStamp) to 400 pixels'''
+    and newH (the image height for imageStamp) to 300 pixels'''
     global size
     global newH
-    newH = 400
+    newH = 300
     size = 5
 def bigPen():
     '''changes pensize to a 20x20 pixel circle
-    and newH (the image height for imageStamp) to 600 pixels'''
+    and newH (the image height for imageStamp) to 400 pixels'''
     global size
     global newH
     size = 10
+    newH = 400
+def jumboPen():
+    '''changes pensize to a 50x50 pixel circle
+    and newH (the image height for imageStamp) to 600 pixels'''
+    global size
+    global newH
+    size = 25
     newH = 600
-
+    
 # canvas functions
 def resetCanvas():
     '''deletes all objects with tag 'paint' from canvas'''
