@@ -195,7 +195,10 @@ def imageStamp(event):
     global can
     global path
     global listImg
-    phot = Image.open(path)
+    if '.png' in path:
+        phot = Image.open(path).convert("RGB")
+    else:
+        phot = Image.open(path)
     [w,h]=phot.size
     newW = int(newH*w/h)
     phot = phot.resize((newW,newH), Image.ANTIALIAS)
