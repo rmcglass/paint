@@ -4,7 +4,7 @@ from tkinter import *
 import tkinter.filedialog as fileDialog
 from PIL import Image, ImageTk
 import io
-# can we add something here to make sure people have gs installed?
+
 # ----------------- global variables --------------#
 
 mainWindow = None
