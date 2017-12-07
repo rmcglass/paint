@@ -67,7 +67,7 @@ def GUIPaint():
     # a frame with buttons to select a paint color
     f = Frame(mainWindow)
     f.grid(row=1, column=0)
-    lab = Label(f, text='Pen Colors')
+    lab = Label(f, text='Colors')
     lab.grid(row=0, column=0)
     redButton = Button(f, text='Red', command=colorRed)
     redButton.grid(row=1, column=0)
@@ -107,7 +107,7 @@ def GUIPaint():
     lab.grid(row=7, column=0)
 
     # pen sizes
-    lab = Label(f2, text='Brush Sizes')
+    lab = Label(f2, text='Sizes')
     lab.grid(row=8, column=0)
     smallButton = Button(f2, text='Small', command=smallPen)
     smallButton.grid(row=9, column=0)
