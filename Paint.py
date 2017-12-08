@@ -107,7 +107,7 @@ def GUIPaint():
     lab.grid(row=7, column=0)
 
     # pen sizes
-    lab = Label(f2, text='Sizes')
+    lab = Label(f2, text='Tool Sizes')
     lab.grid(row=8, column=0)
     smallButton = Button(f2, text='Small', command=smallPen)
     smallButton.grid(row=9, column=0)
